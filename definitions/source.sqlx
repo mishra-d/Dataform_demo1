@@ -4,6 +4,7 @@ config {
     columns: {
         number: "Description of the first column"
     }
+    tags: ["v1.0"]
 }
 
 SELECT 1 AS number
