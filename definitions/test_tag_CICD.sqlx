@@ -1,0 +1,10 @@
+config {
+    type: "table",
+    tags :["v1.0"],
+    description: "Description of the table",
+    columns: {
+        number: "Description of the first column"
+    }
+}
+
+SELECT 1 AS number
