@@ -19,7 +19,9 @@ jobs:
         with:
           args: install
       - name: Run sample bash script
-        run: echo "Testing sample bash command---"
+        run: 
+          echo "Listing files in the workspace directory:"
+          ls $GITHUB_WORKSPACE
       - name: Decrypt dataform credentials
         run: gpg --quiet --batch --yes --decrypt --passphrase="$CREDENTIALS_GPG_PASSPHRASE" --output .df-credentials.json .df-credentials.json.gpg
         env:
