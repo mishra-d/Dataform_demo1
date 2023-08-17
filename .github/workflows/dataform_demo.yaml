@@ -18,6 +18,8 @@ jobs:
         uses: docker://dataformco/dataform:2.6.3
         with:
           args: install
+      - name: Run sample bash script
+        run: echo "Testing sample bash command---"
       - name: Decrypt dataform credentials
         run: gpg --quiet --batch --yes --decrypt --passphrase="$CREDENTIALS_GPG_PASSPHRASE" --output .df-credentials.json .df-credentials.json.gpg
         env:
