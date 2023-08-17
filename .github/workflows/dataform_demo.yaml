@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code into workspace directory
         uses: actions/checkout@v2
       - name: Install NPM dependencies
-        uses: docker://dataformco/dataform:1.16.3
+        uses: docker://dataformco/dataform:2.6.3
         with:
           args: install
       - name: Decrypt dataform credentials
@@ -23,6 +23,6 @@ jobs:
         env:
           CREDENTIALS_GPG_PASSPHRASE: ${{ secrets.CREDENTIALS_GPG_PASSPHRASE }}
       - name: Execute dataform run
-        uses: docker://dataformco/dataform:1.16.3
+        uses: docker://dataformco/dataform:2.6.3
         with:
           args: run --tags="v1.0"
