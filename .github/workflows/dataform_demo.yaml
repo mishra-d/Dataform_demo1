@@ -25,4 +25,4 @@ jobs:
       - name: Execute dataform run
         uses: docker://dataformco/dataform:1.16.3
         with:
-          args: run --tag ["v1.0"]
+          args: run --tag "v1.0"
