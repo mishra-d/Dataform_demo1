@@ -3,7 +3,7 @@ config {
     description: "Description of the table",
     columns: {
         number: "Description of the first column"
-    }
+    },
     tags: ["v1.0"]
 }
 
