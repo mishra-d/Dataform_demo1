@@ -7,4 +7,4 @@ config {
     }
 }
 
-SELECT 2 AS number
+SELECT 3 AS number
